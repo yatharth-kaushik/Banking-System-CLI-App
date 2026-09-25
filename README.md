@@ -40,7 +40,7 @@ Banking-System/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repository-name.git
+git clone https://github.com/yatharth-kaushik/Banking-System-CLI-App
 ```
 
 ### 2. Navigate to the project directory
