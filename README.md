@@ -46,7 +46,7 @@ git clone https://github.com/yatharth-kaushik/Banking-System-CLI-App
 ### 2. Navigate to the project directory
 
 ```bash
-cd your-repository-name
+cd Banking-System-CLI-App
 ```
 
 ### 3. Run the application
