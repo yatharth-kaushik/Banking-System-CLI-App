@@ -1,63 +1,89 @@
-# 🏦 My Bank — CLI Banking System
+<div align="center">
 
-A **Python-based Command-Line Banking System** that uses **SQLite** for persistent data storage. The application allows users to create accounts, securely log in using a 4-digit PIN, manage their balance, transfer money, and view transaction history.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:141e30,100:243b55&height=230&section=header&text=%F0%9F%8F%A6%20My%20Bank&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=A%20Python%20%2B%20SQLite%20Command-Line%20Banking%20System&descAlignY=58&descSize=18" width="100%" />
+
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=F7C948&center=true&vCenter=true&width=700&lines=Create+accounts+%26+log+in+with+a+PIN+%F0%9F%94%90;Deposit%2C+withdraw+%26+transfer+money+%F0%9F%92%B8;Every+transaction+recorded+in+SQLite+%F0%9F%97%84%EF%B8%8F;Built+entirely+in+the+terminal+%F0%9F%90%8D" alt="Typing SVG" />
+</a>
+
+<br/>
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+<img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
+<img src="https://img.shields.io/badge/Interface-CLI-black?style=for-the-badge&logo=gnubash&logoColor=white" alt="CLI" />
+<img src="https://img.shields.io/badge/Purpose-Educational-blueviolet?style=for-the-badge" alt="Educational" />
+
+<img src="https://img.shields.io/github/stars/yatharth-kaushik/Banking-System-CLI-App?style=flat-square&logo=github&color=yellow" alt="stars" />
+<img src="https://img.shields.io/github/forks/yatharth-kaushik/Banking-System-CLI-App?style=flat-square&logo=github" alt="forks" />
+<img src="https://img.shields.io/github/last-commit/yatharth-kaushik/Banking-System-CLI-App?style=flat-square&color=blue" alt="last commit" />
+<img src="https://img.shields.io/github/repo-size/yatharth-kaushik/Banking-System-CLI-App?style=flat-square&color=orange" alt="repo size" />
+
+</div>
+
+---
+
+## 📖 Overview
+
+**My Bank** is a Python command-line banking system backed by **SQLite** for persistent storage. Create an account, log in with a 4-digit PIN, manage your balance, transfer money to other accounts, and review your full transaction history, all from the terminal.
+
+---
 
 ## ✨ Features
 
-* 👤 Create a new bank account
-* 🔐 PIN-based account login
-* 💰 Check current account balance
-* ➕ Deposit money
-* ➖ Withdraw money
-* 🔄 Transfer money between accounts
-* 📜 View transaction history
-* 🗄️ SQLite database for persistent storage
-* ✅ Input validation and error handling
-* 💾 Automatic transaction recording
-* 🚪 Secure logout option
+| | Feature | Description |
+|---|---|---|
+| 👤 | **Create Account** | Open a new account with an auto-generated 10-digit account number |
+| 🔐 | **PIN Login** | Log in with your account number and 4-digit PIN |
+| 💰 | **Check Balance** | View your name and current balance |
+| ➕ | **Deposit** | Add money to your account |
+| ➖ | **Withdraw** | Withdraw funds (blocked if balance is insufficient) |
+| 🔄 | **Transfer** | Send money to another existing account |
+| 📜 | **Transaction History** | See every transaction with type, amount and balance |
+| 🗄️ | **SQLite Storage** | All data persists between runs |
+| ✅ | **Validation** | Input checks and error handling throughout |
+| 🚪 | **Logout** | End your session from the dashboard |
 
-## 🛠️ Technologies Used
+---
 
-* **Python**
-* **SQLite3**
-* **Random module**
-* **CLI (Command-Line Interface)**
+## 🛠️ Built With
 
-## 📂 Project Structure
+<div align="center">
 
-```text
-Banking-System/
-│
-├── main.py
-├── bank.db
-└── README.md
-```
+<img src="https://skillicons.dev/icons?i=python,sqlite,git,github,vscode&perline=5" alt="tech" />
 
-> `bank.db` is created automatically when the program runs if it does not already exist.
+</div>
 
-## 🚀 How to Run
+`Python` • `SQLite3` • `random` • `CLI`
 
-### 1. Clone the repository
+---
+
+## 🚀 Getting Started
+
+**1️⃣ Clone the repository**
 
 ```bash
-git clone https://github.com/yatharth-kaushik/Banking-System-CLI-App
+git clone https://github.com/yatharth-kaushik/Banking-System-CLI-App.git
 ```
 
-### 2. Navigate to the project directory
+**2️⃣ Move into the project folder**
 
 ```bash
 cd Banking-System-CLI-App
 ```
 
-### 3. Run the application
+**3️⃣ Run the app**
 
 ```bash
 python main.py
 ```
 
+> 💡 `bank.db` is created automatically the first time you run the program.
+
+---
+
 ## 🏦 How It Works
 
-When the application starts, the user gets three options:
+### Start Menu
 
 ```text
 1. Login
@@ -65,27 +91,15 @@ When the application starts, the user gets three options:
 3. Exit
 ```
 
-### Create Account
+### 👤 Create Account
 
-The user provides:
+Provide your **name** and a **4-digit PIN**. A unique **10-digit account number** is generated for you, and your starting balance is **₹0**.
 
-* Account holder name
-* 4-digit PIN
+### 🔐 Login
 
-A unique 10-digit account number is automatically generated, and the initial balance is set to ₹0.
+Enter your **account number** and **PIN**. They are checked against the database before you can access the dashboard.
 
-### Login
-
-Users log in using their:
-
-* Account Number
-* 4-digit PIN
-
-The credentials are checked against the SQLite database before access to the account dashboard is granted.
-
-## 📊 Account Dashboard
-
-After successful login, users can access:
+### 📊 Account Dashboard
 
 ```text
 1. Check Balance
@@ -96,99 +110,154 @@ After successful login, users can access:
 6. Logout
 ```
 
+---
+
 ## 💳 Banking Operations
 
-### Check Balance
+<details open>
+<summary><b>💰 Check Balance</b></summary>
 
-Displays the account holder's name and current account balance.
+Displays the account holder's name and the current balance.
 
-### Deposit Money
+</details>
 
-Users can deposit a positive amount into their account. The updated balance and transaction are stored in the database.
+<details>
+<summary><b>➕ Deposit Money</b></summary>
 
-### Withdraw Money
+Deposit any positive amount. The new balance and the transaction are saved to the database.
 
-Users can withdraw money if sufficient balance is available. The system prevents withdrawals greater than the current balance.
+</details>
 
-### Transfer Money
+<details>
+<summary><b>➖ Withdraw Money</b></summary>
 
-Users can transfer money to another existing account. The system checks that:
+Withdraw money as long as you have enough balance. Withdrawals above your current balance are rejected.
 
-* The receiver account exists
-* The receiver is not the sender
-* The sender has sufficient balance
-* The transfer amount is greater than zero
+</details>
 
-Both the sender and receiver receive corresponding transaction records.
+<details>
+<summary><b>🔄 Transfer Money</b></summary>
 
-### Transaction History
+Before a transfer goes through, the app checks that:
 
-The application stores and displays:
+- ✅ The receiver account exists
+- ✅ The receiver is not the sender
+- ✅ The sender has sufficient balance
+- ✅ The amount is greater than zero
 
-* Transaction ID
-* Transaction type
-* Amount
-* Balance after transaction
-* Transaction date and time
+Both the sender and the receiver get a matching transaction record.
 
-## 🗄️ Database
+</details>
 
-The application uses SQLite with two tables:
+<details>
+<summary><b>📜 Transaction History</b></summary>
 
-### `accounts`
+Each record shows:
 
-Stores:
+- Transaction ID
+- Transaction type
+- Amount
+- Balance after the transaction
+- Date and time
 
-* Account number
-* Account holder name
-* PIN
-* Account balance
+</details>
 
-### `transactions`
+---
 
-Stores:
+## 🗄️ Database Design
 
-* Transaction ID
-* Account number
-* Transaction type
-* Transaction amount
-* Balance after transaction
-* Transaction date
+<table>
+<tr>
+<td valign="top">
+
+**`accounts`**
+
+- Account number
+- Account holder name
+- PIN
+- Balance
+
+</td>
+<td valign="top">
+
+**`transactions`**
+
+- Transaction ID
+- Account number
+- Transaction type
+- Amount
+- Balance after transaction
+- Transaction date
+
+</td>
+</tr>
+</table>
+
+---
 
 ## 🔒 Validation & Error Handling
 
-The application includes validation for:
+The app handles:
 
-* Empty account holder names
-* Invalid PIN formats
-* Invalid account numbers
-* Invalid transaction amounts
-* Insufficient account balance
-* Non-existent receiver accounts
-* Transfers to the user's own account
-* Invalid menu choices
-* SQLite database errors
+- ❌ Empty account holder names
+- ❌ Invalid PIN formats
+- ❌ Invalid account numbers
+- ❌ Invalid transaction amounts
+- ❌ Insufficient balance
+- ❌ Non-existent receiver accounts
+- ❌ Transfers to your own account
+- ❌ Invalid menu choices
+- ❌ SQLite database errors
 
-Database operations use commit/rollback handling for transaction failures.
+Database operations use **commit / rollback** handling so a failed transaction doesn't leave your data in a half-updated state.
 
-## 📌 Future Improvements
+---
 
-Possible improvements for future versions:
+## 📂 Project Structure
 
-* Password/PIN hashing instead of storing the PIN directly
-* Admin dashboard
-* Account deletion
-* Account profile updates
-* Transaction search and filtering
-* Interest calculation
-* Improved UI using a Python CLI framework
-* Unit testing
-* More detailed security features
+```text
+Banking-System/
+│
+├── main.py      # Application code
+├── bank.db      # Auto-generated SQLite database
+└── README.md    # Project documentation
+```
 
-## 👨‍💻 Author
+---
 
-**Yatharth Kaushik**
+## 🔮 Roadmap
+
+- [ ] PIN hashing instead of storing the PIN directly
+- [ ] Admin dashboard
+- [ ] Account deletion
+- [ ] Account profile updates
+- [ ] Transaction search and filtering
+- [ ] Interest calculation
+- [ ] Improved UI with a Python CLI framework
+- [ ] Unit tests
+- [ ] More detailed security features
+
+---
 
 ## 📄 License
 
 This project is intended for educational and learning purposes.
+
+---
+
+## 👨‍💻 Author
+
+<div align="center">
+
+**Yatharth Kaushik**
+
+<a href="https://github.com/yatharth-kaushik"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/yatharth-kaushik-92920a421/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+
+<br/><br/>
+
+⭐ **If you find this project useful, consider giving it a star!** ⭐
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:243b55,100:141e30&height=120&section=footer" width="100%" />
+
+</div>
